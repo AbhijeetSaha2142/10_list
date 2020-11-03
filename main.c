@@ -39,13 +39,13 @@ int main(){
     print_list(start);
 
     printf("Removing Dialga\n");
-    start = remove_node(start, 120, "Dialga"); // last node
+    start = remove_node(start, 100, "Dialga"); // last node
     print_list(start);
 
     printf("Removing nonexistent pokemon");
     start = remove_node(start, 1, "Blob ");
     print_list(start);
-    
+
     free_list(start);
 
 }

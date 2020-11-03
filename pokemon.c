@@ -62,7 +62,8 @@ struct pokemon *remove_node(struct pokemon *p, int spd, char *n){
             } 
             else if(!(pp->next)){ // case of the end of the linked list
                 free(pp);
-                return p; // begin
+                prev->next = NULL;
+                return p; 
             } 
             else{ // case of something in the middle
                 prev->next = pp->next; // link up previous node to node after removed one

@@ -30,19 +30,19 @@ int main(){
     printf("Printing list:\n");
     print_list(start);
     
-    printf("Removing Pikachu\n"); // first node
+    printf("\nRemoving Pikachu:\n"); // first node
     start = remove_node(first_pokemon, 90, "Pikachu");
     print_list(start);
 
-    printf("Removing Arceus\n");
+    printf("\nRemoving Arceus\n");
     start = remove_node(start, 120, "Arceus"); // middle node
     print_list(start);
 
-    printf("Removing Dialga\n");
+    printf("\nRemoving Dialga\n");
     start = remove_node(start, 100, "Dialga"); // last node
     print_list(start);
 
-    printf("Removing nonexistent pokemon");
+    printf("\nRemoving nonexistent pokemon\n");
     start = remove_node(start, 1, "Blob ");
     print_list(start);
 
